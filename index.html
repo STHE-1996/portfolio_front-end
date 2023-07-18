@@ -4,17 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio website</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            /* Adjust header layout for smaller screens */
+            #header {
+                text-align: center;
+            }
+            .logo {
+                display: block;
+                margin: 0 auto;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+            nav li {
+                margin-bottom: 10px;
+            }
+            .header-text {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .about-col-1,
+            .about-col-2 {
+                width: 100%;
+                text-align: center;
+            }
+            .about-col-1 img {
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .tab-titles {
+                text-align: center;
+            }
+            .tab-links {
+                display: inline-block;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .tab-contents {
+                display: none;
+            }
+            .tab-contents.active-tab {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <script src="https://kit.fontawesome.com/70d4d762c1.js" crossorigin="anonymous"></script>
 <body>
     <div id="header">
         <div class="container">
              <nav>
-                <img src="images/logo7.jpg " class="logo">
+                <img src="images/Black & White Minimalist Business Logo (1).png" class="logo">
                 <ul>
-                    <li><a href="#header">home</a></li>
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -22,76 +71,55 @@
                 </ul>
              </nav>
              <div class="header-text">
-                    <img src="images/Picture1.png" float="Right"/>
+                    <img src="images/Picture1.png" style="float: right;">
                 <p>SOFTWARE DEVELOER</p>
                 <h1>Hi, I'm <span>Sthembiso</span><br>From South Africa</h1>
              </div>
         </div>  
     </div>
-    <!------------------------------------- about ------------------------------------>
+    <!-- ------------------------------------- about ------------------------------------>
     <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <img src="images/WhatsApp Image 2022-11-17 at 11.58.22.jpeg" width="400" height="500">
             </div>
-            <div class="about-col-2 ">
+            <div class="about-col-2">
                 <h1 class="sub-title">About me</h1>
-                <p>I am an individual who excel in what 
-                    they do, My objective in life is to
-                    succeed in environment of growth 
-                    and excellence, earn a job which 
-                    provides me with job satisfaction and 
-                    self-development which helps me to 
-                    achieve personal as well as 
-                    organizational goals. I consider myself 
-                    as self-motivated, hardworking and 
-                    reliable person. I have positive 
-                    attitude and don’t allow myself to be 
-                    disrupted by any negative energy or 
-                    opinions. I am open minded, 
-                    approachable and I can easily adapt 
-                    to any environment. I am committed 
-                    in what I do and a big fan of new 
-                    challenges. I pay attention to details 
-                    and I can work well under pressure.
-                </p>
+                <p>I am an individual who excels in what they do. My objective in life is to succeed in an environment of growth and excellence, earn a job which provides me with job satisfaction and self-development that helps me achieve personal as well as organizational goals. I consider myself as self-motivated, hardworking, and reliable person. I have a positive attitude and don’t allow myself to be disrupted by any negative energy or opinions. I am open-minded, approachable, and I can easily adapt to any environment. I am committed to what I do and a big fan of new challenges. I pay attention to details and I can work well under pressure.</p>
 
-
-               <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('Education')">Education</p>
-               </div> 
-              <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing web/App interfaces</li>
-                    <li><span>Web Developer</span><br>Web app Developer</li>
-                    <li><span> Developer</span><br>Back-end Developer</li>
-                    <li><span>Languages</span><br>Java, C++, JavaScript, CSS, and HTML</li>
-
-                </ul>
-              </div>  
-              <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>2021 - 2022</span><br>BonConnect as Front-End Developer</li>
-                    <li><span>2022 - 2023</span><br>Ejoobi Company as a Back-end Developer</li>
-                    <li><span> Microsoft Azure</span><br>Wordpress Image</li>
-                    <li><span> JasperSoftware</span><br>jrxml in Java</li>
-
-                </ul>
-              </div> 
-              <div class="tab-contents" id="Education">
-                <ul>
-                    <li><span>2016</span><br>Diploma in Information Technology</li>
-                </ul>
-              </div> 
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                        <li><span>Web Developer</span><br>Web app Developer</li>
+                        <li><span>Developer</span><br>Back-end Developer</li>
+                        <li><span>Languages</span><br>Java, C++, JavaScript, CSS, and HTML</li>
+                    </ul>
+                </div>  
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - 2022</span><br>BonConnect as Front-End Developer</li>
+                        <li><span>2022 - 2023</span><br>Ejoobi Company as a Back-end Developer</li>
+                        <li><span>Microsoft Azure</span><br>Wordpress Image</li>
+                        <li><span>JasperSoftware</span><br>jrxml in Java</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016</span><br>Diploma in Information Technology</li>
+                    </ul>
+                </div> 
             </div> 
         </div>
     </div>
     </div> 
 
-<!--------------------------------Services------------------------ -->
+<!-- --------------------------------Services------------------------ -->
  <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
@@ -99,28 +127,21 @@
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2>Web Design</h2>
-                <p>I am a Software Developer at ejoobi HR Tech Company
-                   My role Back-end Developer in Java </p>
-                    <a href="#">learn more</a>
+                <p>I am a Software Developer at ejoobi HR Tech Company. My role is Back-end Developer in Java.</p>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2>UI/UX Design</h2>
-                <p>Planing the system designs and System design
-                   its kinda my thing i use XD to design my UI/UX 
-                   designs </p>
-                    <a href="#">learn more</a>
+                <p>Planning the system designs and system design is my thing. I use XD to design my UI/UX designs.</p>
+                <a href="#">Learn More</a>
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
                 <h2>WordPress</h2>
-                <p>I design websites using WordPress templates
-                   and also websitebuilder. I can also spin out
-                   the Wordpress image.
-                </p>
-                    <a href="#">learn more</a>
+                <p>I design websites using WordPress templates and also website builder. I can also spin out the Wordpress image.</p>
+                <a href="#">Learn More</a>
             </div> 
-
         </div>
     </div>
  </div>
@@ -133,34 +154,29 @@
             <div class="work">
                 <img src="images/ANALB logo.PNG">
                 <div class="layer">
-                    <h3>A.N.A.L.B Security website</h3>
-                    <p>This is the A.N.A.L.B security company landing page,
-                        i designed this landing page using wix template,
-                    </p>
+                    <h3>A.N.A.L.B Security Website</h3>
+                    <p>This is the A.N.A.L.B security company landing page. I designed this landing page using Wix template.</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/logo2.PNG">
                 <div class="layer">
-                    <h3>Belsheza website</h3>
-                    <p>Belsheza engeenering website landing page,
-                        i designed it using Wordpress templates
-                    </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <h3>Belsheza Website</h3>
+                    <p>Belsheza engineering website landing page. I designed it using Wordpress templates.</p>
+                    <a href="https://belprojects.co.za/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/burnt_desire.webp">
+                <img src="images/WhatsApp Image 2023-06-21 at 12.13.53 (3).jpeg">
                 <div class="layer">
                     <h3>Online Shopping</h3>
-                    <p>The online ecommerce for burned desire fashion store
-                    </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <p>The online ecommerce for Burned Desire fashion store.</p>
+                    <a href="https://nqobizwelonkeprojects.co.za/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#https://sthembisobuthelezi30.wixsite.com/a-n-a-l-b" class="btn">See more</a>
+        <a href="https://sthembisobuthelezi30.wixsite.com/a-n-a-l-b" class="btn">See More</a>
     </div>
 </div>
 
@@ -174,10 +190,10 @@
                 <p><i class="fas fa-phone-square-alt"></i>0636015960</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/homzat.sthembiso"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-instagam"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/sthembiso-buthelezi-878701241?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN0JVXFWpQV22Gq8UMYUFiQ%3D%3D"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a href="images/Sthembiso's cv.pdf" class="btn btn2">Download cv</a>
+                <a href="images/SthembisoCV.pdf" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form>
@@ -191,29 +207,25 @@
     </div>
 </div>
 
-
-   
 <script>
- <!-- Hiding information when click a tab on the experience tabs ( Skills, experience and Education) -->
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+    // Hiding information when clicking a tab on the experience tabs (Skills, experience, and Education)
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for (tablink of tablinks){
-        tablink.classList.remove("active-link");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Adding info to the tab Education and experience
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
     }
-
-    for (tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-
-    // Adding infor to the tab Education and experience
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-
-}
-
 </script>
 
 </body>
-</html> 
+</html>
